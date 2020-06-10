@@ -14,7 +14,7 @@ const items = ['item1', 'item2', 'item3'];
 const workItems = [];
 
 // Assigns port to listen to when fired up
-app.listen(3000, function() {
+app.listen(process.env.PORT || 3000, function() {
   console.log("The server has been started on port 3000");
 });
 
